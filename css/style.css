@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+body {
+    box-sizing: border-box;
+    background: linear-gradient(241deg, #c6b8ff, #ffa38a, #ff2f26);
+    background-size: 180% 180%;
+    animation: gradient-animation 15s ease infinite;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.gallery {
+    background: #EEE;
+  }
+  
+  .gallery-cell {
+    width: 66%;
+    height: 350px !important;
+    margin-right: 10px;
+  }
+  .text-center{
+    text-align:center
+  }
+   
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
