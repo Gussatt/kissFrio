@@ -1,48 +1,316 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiss Frio</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/card-flicker.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kiss Frio</title>
+	<link rel="shortcut icon" href="img/Component 1.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/carousel.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
 </head>
 
 <body>
 
-    <header>
-        <a href="#"> <img src="img/Component 1.png"
-                alt="Logo da Kiss Frio com dois bonecos de neve e o nome da sorveteria" />
-        </a>
+	<header id="header">
+		<div class="left-container" data-aos="zoom-in">
+			<a href="#" class="link-logo">
+				<img src="img/Component 1.png" class="img-logo"
+					alt="Logo da Kiss Frio com dois bonecos de neve e o nome da sorveteria" />
+			</a>
+		</div>
 
-        <div>
-            <ul class="header-list">
-                <li class="header-link"><a href="#home"> Inicio </a></li>
-                <li class="header-link"><a href="#produtos"> Produtos </a></li>
-                <li class="header-link"><a href="#sobre"> Sobre nós </a></li>
-                <li class="header-link"><a href="#contato"> Contato </a></li>
-            </ul>
-        </div>
-    </header>
+		<div class="middle-container">
+			<ul class="header-list">
+				<li class="header-link">
+					<a href="#home">
+						<span>
+							Início
+						</span>
+					</a>
+				</li>
+				<li class="header-link">
+					<a href="#produtos">
+						<span>
+							Produtos
+						</span>
+					</a>
+				</li>
+				<li class="header-link">
+					<a href="#sobre">
+						<span>Sobre</span>
+					</a>
+				</li>
+				<li class="header-link">
+					<a href="#contato">
+						<span>
+							Contato
+						</span>
+					</a>
+				</li>
+			</ul>
+			<hr>
+		</div>
 
-    <main>
+		<div class="header-btn-container">
+			<a href="#" class="header-btn">
+				<span class="header-btn-text">
+					Compre agora!
+				</span>
+			</a>
+		</div>
+	</header>
 
-    </main>
+	<main>
+		<section id="home">
 
-    <footer>
+		<!-- Image Carousel LICENSE 
+		Copyright (c) 2023 by Vanessa B. (https://codepen.io/vanessalearnsjavascript/pen/eYENZoR)
 
-    </footer>
+		Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-    <script src="script/index.js"></script>
-    <script src="https://kit.fontawesome.com/e2a8d0d6fc.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-    <script>
-        AOS.init();
-    </script>
+		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+		-->
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+				<img src="img/sorvete2.jpeg">
+			</div>
+
+			<div class="mySlides fade">
+				<img src="img/sorvete3.jpeg">
+			</div>
+
+			<div class="mySlides fade">
+				<img src="img/sorvete4.webp">
+			</div>
+
+		</div>
+
+		<article class="intro">
+			<div class="intro-title-container">
+				<h3>
+					Kiss Frio
+				</h3>
+			</div>
+
+			<div class="intro-text-container">
+				<p>
+					Aqui você descobrirá o paraíso dos sabores! Encontre os mais irresistíveis produtos para encantar seu comércio ou mimar sua família com o que há de melhor! 
+				</p>
+			</div>
+		</article>
+
+	</section>
+
+	<section id="produtos">
+		<div class="produtos-container">
+			<div class="sorvetes-container">
+				<div class="sorvetes-title">
+					<h3>
+						Confira nosso produtos!
+					</h3>
+				</div>
+				<div class="sorvetes-wrapper">
+					<div class="sorvetes-content">
+						<a href="#" class="icons-sorvetes">
+							<img src="img/fote picolé.jpeg" alt="Ícone de sorvete de palito!">
+						</a>
+						<a href="#" class="text-sorvetes">
+							<h3>
+								Picolés de diversos sabores
+							</h3>
+							<h3>
+								Clique para ver mais!
+							</h3>
+							<p>
+								R$ 3,50
+							</p>
+						</a>
+					</div>
+					<div class="sorvetes-content">
+						<a href="#" class="icons-sorvetes">
+							<img src="img/foto-sundae.jpeg" alt="Ícone de sorvete de potinho da Kiss Frio">
+						</a>
+
+						<a href="#" class="text-sorvetes">
+							<h3>
+								Potes de massa e sundaes
+							</h3>
+							<h3>
+								Clique para ver mais!
+							</h3>
+							<p>
+								De R$6,0 a R$9,0
+							</p>
+						</a>
+					</div>
+					<div class="sorvetes-content">
+						<a href="#" class="icons-sorvetes">
+							<img src="img/foto-pote.jpeg" alt="Ícone de sorvete de pote da Kiss Frio">
+						</a>
+						<a href="#" class="text-sorvetes">
+							<h3>
+								Sorvetes de massa 2.5L
+							</h3>
+							<h3>
+								Clique para ver mais!
+							</h3>
+							<p>
+								R$ 23,60
+							</p>
+						</a>
+					</div>
+					<div class="sorvetes-content">
+						<a href="#" class="icons-sorvetes">
+							<img src="img/sorvete-10l.jpg" alt="Ícone de sorvete de pote da Kiss Frio">
+						</a>
+						<a href="#" class="text-sorvetes">
+							<h3>
+								Sorvetes de massa 10L
+							</h3>
+							<h3>
+								Clique para ver mais!
+							</h3>
+							<p>
+								R$ 120,0
+							</p>
+						</a>
+					</div>
+					<div class="sorvetes-content">
+						<a href="#" class="icons-sorvetes">
+							<img src="img/acai.jpg" alt="Ícone de sorvete de pote da Kiss Frio">
+						</a>
+						<a href="#" class="text-sorvetes">
+							<h3>
+								Açaí de 10L
+							</h3>
+							<h3>
+								Clique para ver mais!
+							</h3>
+							<p>
+								R$ 120,0
+							</p>
+						</a>
+					</div>
+					<div class="sorvetes-content">
+						<a href="#" class="icons-sorvetes">
+							<img src="img/pote-15.jpg" alt="Ícone de sorvete de pote da Kiss Frio">
+						</a>
+						<a href="#" class="text-sorvetes">
+							<h3>
+								Sorvetes de pote 1.5L
+							</h3>
+							<h3>
+								Clique para ver mais!
+							</h3>
+							<p>
+								R$ 23,60
+							</p>
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="sobre">
+		<!-- Copyright (c) 2023 by iilhamriz (https://codepen.io/iilhamriz/pen/qBXVVLP)
+
+		Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+		The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+		-->
+
+		<section class="accordion container">
+			<div class="accordion__container">
+				<div class="accordion__item">
+					<header class="accordion__header">
+						<i class='bx bx-plus accordion__icon'></i>
+						<h3 class="accordion__title">Nossa missão</h3>
+					</header>
+
+					<div class="accordion__content">
+						<p class="accordion__description">
+							Levar ao cliente o melhor produto de forma rápida!
+						</p>
+					</div>
+				</div>
+
+				<div class="accordion__item">
+					<header class="accordion__header">
+						<i class='bx bx-plus accordion__icon'></i>
+						<h3 class="accordion__title">Nossa visão</h3>
+					</header>
+
+					<div class="accordion__content">
+						<p class="accordion__description">
+							Ser a sorveteria de eleição, onde cada colherada é uma viagem inesquecível ao mundo dos sabores autênticos e da alegria compartilhada.
+						</p>
+					</div>
+				</div>
+
+				<div class="accordion__item">
+					<header class="accordion__header">
+						<i class='bx bx-plus accordion__icon'></i>
+						<h3 class="accordion__title">Nossos valores</h3>
+					</header>
+
+					<div class="accordion__content">
+						<p class="accordion__description">
+							Somos extremamente engajados em trazer a máxima qualidade, transparência e qualidade nos ingredientes.
+						</p>
+					</div>
+				</div>
+
+				<div class="accordion__item">
+					<header class="accordion__header">
+						<i class='bx bx-plus accordion__icon'></i>
+						<h3 class="accordion__title">Nossa equipe!</h3>
+					</header>
+
+					<div class="accordion__content">
+						<p class="accordion__description">
+							Os integrantes de nossa sorveteria são mestres na arte de encantar os clientes com o empenho no trabalho!
+						</p>
+					</div>
+				</div>
+			</div>
+			</section>
+	</section>
+
+	<section id="contato">
+
+	</section>
+	</main>
+
+	<footer>
+
+		<div class="copyright-container">
+			<div class="copyright-title">
+				<h4>
+					Todos os direitos reservados - Desenvolvido por <a href="https://www.linkedin.com/in/gustavo-saturnino" target="_blank" rel="noreferrer"> Gustavo Saturnino<sup>©</sup> </a>
+				</h4>
+			</div>
+		</div>
+
+	</footer>
+
+	<script src="script/index.js"></script>
+	<script src="https://kit.fontawesome.com/e2a8d0d6fc.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<script>
+		AOS.init();
+	</script>
 </body>
 
 </html>
