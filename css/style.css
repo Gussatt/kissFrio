@@ -9,6 +9,7 @@
 	text-decoration: none;
 }
 
+
 body {
 	box-sizing: border-box;
 	overflow-x: hidden;
@@ -181,7 +182,7 @@ body {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 	gap: 3rem 2rem;
-	padding: 0rem 6rem 2rem 6rem;
+	padding: 0rem 3rem 2rem 3rem;
 	margin: 10vh 0 0 0;
 }
 
