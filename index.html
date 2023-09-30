@@ -1,5 +1,5 @@
-<html lang="pt-br">
-
+<!DOCTYPE html>
+<hmtl lang="pt-br">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
 
 <body>
 
-	<header id="header">
+	<header id="header" data-aos="zoom-in">
 		<div class="left-container" data-aos="zoom-in">
 			<a href="#" class="link-logo">
 				<img src="img/Component 1.png" class="img-logo"
@@ -62,10 +62,16 @@
 				</span>
 			</a>
 		</div>
+
+		<div class="hamburger-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
 	</header>
 
 	<main>
-		<section id="home">
+		<section id="home" data-aos="fade-right" data-aos-duration="1000">
 
 		<!-- Image Carousel LICENSE 
 		Copyright (c) 2023 by Vanessa B. (https://codepen.io/vanessalearnsjavascript/pen/eYENZoR)
@@ -108,7 +114,7 @@
 
 	</section>
 
-	<section id="produtos">
+	<section id="produtos" data-aos="fade-right" data-aos-duration="1000">
 		<div class="produtos-container">
 			<div class="sorvetes-container">
 				<div class="sorvetes-title">
@@ -218,9 +224,49 @@
 
 			</div>
 		</div>
+
+		<section id="servicos">
+			<h3>
+				Conheça nossos serviços
+			</h3>
+			<div class="servicos-container">
+
+				<div class="servicos-content">
+					<div class="servicos-img-container">
+						<img src="img/delivery.png" alt="Ícone de um caminhão de delivery">
+					</div>
+					<div class="text-container">
+						<p class="servicos-text">
+							Garantimos o seu sorvete na sua porta num piscar de olhos.
+						</p>
+					</div>
+				</div>
+				<div class="servicos-content">
+					<div class="servicos-img-container">
+						<img src="img/sorvete-palito.png" alt="Ícone de um caminhão de delivery">
+					</div>
+					<div class="text-container">
+						<p class="servicos-text">
+							Nossos ingredientes são o segredo para uma explosão de sabores e de sensações.
+						</p>
+					</div>
+				</div>
+				<div class="servicos-content">
+					<div class="servicos-img-container">
+						<img src="img/entrega.png" alt="Ícone de um caminhão de delivery">
+					</div>
+					<div class="text-container">
+						<p class="servicos-text">
+							Nosso serviço de atacado é o melhor da região e irá aumentar seus clientes!
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
 	</section>
 
-	<section id="sobre">
+	<section id="sobre" data-aos="fade-right" data-aos-duration="1000">
 		<!-- Copyright (c) 2023 by iilhamriz (https://codepen.io/iilhamriz/pen/qBXVVLP)
 
 		Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -287,8 +333,62 @@
 			</section>
 	</section>
 
-	<section id="contato">
+	<section id="contato"data-aos="fade-right" data-aos-duration="1000">
+		<div class="contato-container">
+			<fieldset class="campo-form">
+				<label for="nome" class="form-label">Nome </label>
+				<input class="input-text"type="text" name="nome" id="name-input" placeholder="Insira seu nome" />
+				<label for="telefone" class="form-label">Celular</label>
+				<input class="input-text" type="tel" name="telefone" id="telefone-input" placeholder="Insira seu celular">
+				<label for="email" class="form-label">Email</label>
+				<input class="input-text" type="email" name="email" id="email-input" placeholder="Insira seu E-Mail">
+				<label for="textarea" class="form-label"> Mensagem </label>
+				<textarea class="input-text" name="textarea" id="text-area" placeholder="Insira aqui sua mensagem"></textarea>
+			</fieldset>
+		</div>
 
+		<div class="follow-us-container">
+			<h2 class="follow-us-title">
+				Nos acompanhe!
+			</h2>
+		</div>
+
+		<div class="social-container">
+			<div class="social-icons-container">
+				<ul class="social-list">
+					<li class="social-icon-container">
+						<a href="https://wa.me/5511973781048" target="_blank" class="icon-link">
+							<i class="fa-brands fa-whatsapp"></i>
+						</a>
+					</li>
+					<li class="social-icon-container">
+						<a href="https://www.instagram.com/sorveteskissfrio/" target="_blank" class="icon-link">
+							<i class="fa-brands fa-instagram"></i>
+						</a>
+					</li>
+					<li class="social-icon-container">
+						<a href="https://facebook.com/Sorveteria-Kiss-Frio-305401702825390" target="_blank" class="icon-link">
+							<i class="fa-brands fa-facebook-f"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="tel-us-container">
+			<h2 class="tel-us-title">
+				Nosso contato!
+			</h2>
+		</div>
+
+		<div class="tel-us-container">
+			<h4 class="tel-us-text">
+				<strong> Telefone: (11) 2963-2717 </strong>
+				<br>
+				<br>
+				<strong> Celular: (11) 97378-1048</strong>
+			</h4>
+		</div>
 	</section>
 	</main>
 

@@ -50,3 +50,15 @@ const toggleItem = (item) =>{
 		item.classList.add('accordion-open')
 	}
 }
+
+// HAMBURGER ICON SCRIPT
+
+const hamburgerIcon = document.querySelector(".hamburger-icon");
+const menuItems = document.querySelector('.middle-container');
+const main = document.querySelector('main');
+
+hamburgerIcon.addEventListener("click", () => {
+    menuItems.classList.toggle("show-menu");
+    main.classList.toggle('main-down');
+
+});
