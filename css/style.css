@@ -496,13 +496,27 @@ For large devices
 	margin-top: 0;
 }
 
-.input-text{
+.input-text, .input-submit{
 	font-size: clamp(1rem, 1.2vw, 2rem);
 	color: #090909;
 	background-color: transparent;
 	padding: 2rem 0 .3rem .5rem;
 	outline: none;
 	border-bottom: 1px solid #000;
+}
+
+.input-submit{
+	margin-top: 1rem;
+	padding: 1rem 0;
+	width: 30%;
+	cursor: pointer;
+	border: 1px solid #000;
+	transition: all .3s;
+	border-radius: 1rem;
+}
+
+.input-submit:hover{
+	background-color: #F2BE70;
 }
 
 #text-area{
