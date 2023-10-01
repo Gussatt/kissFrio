@@ -34,7 +34,6 @@ git clone https://github.com/Gussatt/kissFrio.git
 3. Entre na pasta do repositório;
 
 4. Execute o arquivo 'index.html' no seu navegador.
-5. 
 
 ## Licença
 Este projeto é licenciado sob a licença MIT - consulte o arquivo [`LICENSE`](LICENSE) para mais detalhes.
