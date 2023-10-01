@@ -55,10 +55,11 @@ const toggleItem = (item) =>{
 
 const hamburgerIcon = document.querySelector(".hamburger-icon");
 const menuItems = document.querySelector('.middle-container');
+// const headerBtn = document.querySelector('.header-btn-container');
 const main = document.querySelector('main');
 
 hamburgerIcon.addEventListener("click", () => {
     menuItems.classList.toggle("show-menu");
     main.classList.toggle('main-down');
-
+	// headerBtn.classList.toggle('show-button');
 });
