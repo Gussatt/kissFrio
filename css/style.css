@@ -190,7 +190,7 @@ body {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	background-color: #fafafa;
+	background-color: #f6f6f6;
 	border-radius: 2rem;
 	overflow: hidden;
 	cursor: pointer;
