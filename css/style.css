@@ -6,9 +6,12 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
-	text-decoration: none;
+	text-decoration: none !important; 
 }
 
+:root{
+	--font-clr: #f6f6f6;
+}
 
 body {
 	box-sizing: border-box;
@@ -20,18 +23,25 @@ body {
 
 #header {
 	width: 100%;
-	height: 20vh;
+	height: 60vh;
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: url('../img/wave.svg') center center no-repeat;
+	background-size: cover;
+}
+
+.header-content{
+	display: flex;
+	width: 100%;
 	justify-content: space-evenly;
 	align-items: center;
-	background-color: #f6f6f6;
-	/* border-bottom: 1px solid #fff; */
 }
 
 .left-container {
 	position: relative;
 	width: clamp(13rem, 16vw, 30rem);
-	height: 80%;
+	height: 15vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -76,12 +86,78 @@ body {
 .header-link span,
 .header-btn-text {
 	font-size: clamp(1.5rem, 1.7vw, 2.5rem);
-	color: #000;
+	color: var(--font-clr);
 		font-weight: bold;
 }
 
+.wave-container{
+	display: block;
+	position: relative;
+
+}
+
+.wave-container img{
+	position: relative;
+	display: block
+}
+
+.hamburger-icon {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    display: none;
+	margin-right: 2rem;
+}
+
+.bar {
+    width: 100%;
+    height: 20%;
+    background-color: #090909;
+}
+
+/* FIM HEADER */
+
+/* MAIN CONTENT */
+
+#home{
+	padding: 2rem 5vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: url('../img/background-drip.png') center center no-repeat;
+	background-size: cover;
+}
+
+.intro{
+	width: 35%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.intro-title-container h3{
+	color: var(--font-clr);
+	font-size: clamp(2.5rem, 4vw, 5rem);
+	font-weight: 900;
+}
+
+.intro-text-container{
+	margin-top: 1rem;
+		text-align: center;
+}
+
+.intro-text-container p{
+	color: var(--font-clr);
+	font-size: clamp(1.5rem, 2.0vw, 3.5rem);
+}
+
 .header-btn-container {
-	width: 20%;
+	width: 80%;
 	height: 20vh;
 	display: flex;
 	justify-content: center;
@@ -107,132 +183,100 @@ body {
 }
 
 .header-btn-text{
-	color: #fff;
+	color: var(--font-clr);
 }
 
-.hamburger-icon {
-    width: 30px;
-    height: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-    display: none;
-	margin-right: 2rem;
+/* PRODUTOS */
+
+#produtos{
+	background: url('../img/sorvete-background-mono.jpg') center center no-repeat;
+	background-size: cover;
+	box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.6);
+	width: 100%;
+	margin-top: 10vh;
 }
 
-.bar {
-    width: 100%;
-    height: 20%;
-    background-color: #090909;
+.flutuante{
+	position: absolute;
+	width: 10rem;
+	height: 20rem;
 }
 
-/* FIM HEADER */
+.flutuante img{
+	width: 100%;
+	height: 100%;
+}
 
-/* MAIN CONTENT */
-
-#home{
-	padding: 10vh 5vw;
+.product-section{
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.intro{
-	width: 45%;
-	height: 25vw;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	padding: 2rem 3rem;
 	justify-content: space-evenly;
+	flex-wrap: wrap;
 }
 
-.intro-title-container h3{
-	font-size: clamp(2.5rem, 4vw, 5rem);
-	font-weight: 900;
-}
-
-.intro-text-container{
-	margin-top: 1rem;
-		text-align: center;
-}
-
-.intro-text-container p{
-	font-size: clamp(1.5rem, 2.0vw, 3.5rem);
-}
-
-.produtos-container{
-	height: auto;
-}
-
-.sorvetes-container{
+.product-content{
+	height: 100%;
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
 	align-items: center;
+
 }
 
-.sorvetes-title{
-	padding: 1.5rem 0;
-	text-align: center;
-	font-size: clamp(1.5rem, 2.5vw, 3.5rem);
-	font-weight: 900;
-}
-
-.sorvetes-wrapper {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-	gap: 3rem 2rem;
-	padding: 0rem 3rem 0 3rem;
-	margin: 10vh 0 0 0;
-}
-
-.sorvetes-content{
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	background-color: #f6f6f6;
-	border-radius: 2rem;
-	overflow: hidden;
-	cursor: pointer;
-	transition: all .5s;
-}
-
-.sorvetes-content:hover{
+.product-img{
+	width: 300px;
+	height: 300px;
+    min-width: 200px;
+    min-height: 200px;
 	background-color: #F2BE70;
+	z-index: 2;
+ 	transform: scaleY(0);
+  	transform-origin: top;
+  	transition: transform 0.7s ease;
+	position: absolute;
 }
 
-.icons-sorvetes{
+.product-img img{
+	width: 100%;
+	height: 100%;
+}
+
+.product-overlay-container{
 	display: flex;
-	width: 100%;
+	align-items: center;
+	background-color: #FFE4CF ;
+	width: 300px;
+	height: 300px;
+    min-width: 200px;
+    min-height: 200px;
+	transition: .5s all ease-in-out;
+	z-index: 1;
 }
 
-.icons-sorvetes img{
-	width: 100%;
-		height: 100%;
-		min-width: 300px;
-		min-height: 200px;
+.product-content:hover .product-img {
+	transform: scaleY(1); 
 }
 
-.text-sorvetes{
-	margin-top: 2rem;
+.product-overlay{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: url('../img/wave-bottom-product.svg') no-repeat;
+	background-position: -200px;
+	background-size: 500%;
+	width: 100%;
+	height: 100%;
+	transition: .5s all ease-in-out;
+}
+
+.product-text{
+	font-size: clamp(1.4rem, 1.8vw, 2rem);
 	text-align: center;
-	padding: 0 2rem 2rem 2rem;
+	font-weight: bold;
 }
 
-.text-sorvetes h3{
-	font-size: clamp(1.5rem, 1.7vw, 2rem);
-	/* font-weight: bold; */
-	color: #000;
-}
-.text-sorvetes h3:nth-child(2){
-	margin-top: 2rem;
-}
-
-.text-sorvetes p{
-	margin-top: 4rem;
-	font-size: clamp(1rem, 1.5vw, 2rem);
-	/* font-weight: bold; */
-	color: #000;
+.wave-img{
+	display: block;
 }
 
 /* SERVIÇOS */
@@ -740,10 +784,6 @@ footer {
 		z-index: 999;
 		border-bottom: 1px solid #FAFAFA;
 	}
-	
-	main.main-down {
-        padding-top: 25vh
-    }
 
 	.sorvetes-wrapper{
 		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -769,7 +809,7 @@ footer {
 	
 	.intro{
 		width: 90%;
-		margin: 8rem auto 0 auto;
+		margin: 0 auto;
 	}
 
 	#produtos{
