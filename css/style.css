@@ -306,6 +306,8 @@ body {
 	font-weight: bold;
 }
 
+
+
 .wave-img {
 	display: block;
 }
@@ -457,10 +459,16 @@ body {
 
 /* FOOTER */
 
+
 footer {
 	max-width: 100%;
 	display: flex;
 	flex-direction: column;
+}
+
+.wave-footer-container{
+	width: 100%;
+	display: block;
 }
 
 .footer-container{
