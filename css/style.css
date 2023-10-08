@@ -17,8 +17,6 @@ body {
 	box-sizing: border-box;
 	overflow-x: hidden;
 	font-family: 'Montserrat', 'Verdana', sans-serif;
-	background-color: #F2EAD0;
-	background-attachment: fixed;
 }
 
 #header {
@@ -349,6 +347,8 @@ body {
 #servicos {
 	margin-top: 5vh;
 	padding-top: 3rem;
+	background:url('../img/bola-background.jpg') center center no-repeat;
+	background-size: cover;
 }
 
 #servicos h3{
@@ -362,16 +362,15 @@ body {
 	max-width: 90%;
 	position: relative;
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	padding-bottom: 3rem;
 }
 
 .servicos-content{
 	display: flex;
 	height: auto;
-	width: 100%;
+	width: 30%;
 	align-items: center;
 	flex-wrap: wrap;
 }
@@ -380,6 +379,7 @@ body {
 	text-align: center;
 	max-width: 100%;
 	flex: 1;
+	margin-right: 2rem;
 }
 
 .servicos-img-container img{
@@ -454,17 +454,16 @@ body {
 /* FOOTER */
 
 footer {
-	margin-top: 10vh;
 	max-width: 100%;
-	background-color: #C90002;
 	display: flex;
 	flex-direction: column;
 }
 
 .footer-container{
+	background: #C90002;
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	padding: 2rem;
 }
 
@@ -485,8 +484,8 @@ footer {
 	background-color: #F2D5C4;
 }
 
-.follow-us-container,
 .tel-us-container {
+	width: 30%;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -505,13 +504,12 @@ footer {
 	width: 30%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 .social-icons-container {
 	display: flex;
 	justify-content: center;
-	margin-top: 2rem;
 }
 
 .social-list {
@@ -574,10 +572,10 @@ footer {
 }
 
 @media only screen and (max-width:768px) {
-
+/* 
 	.link-logo {
 		margin-left: 2rem;
-	}
+	} */
 
 	#header {
 		justify-content: space-between;
