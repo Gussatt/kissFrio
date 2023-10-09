@@ -197,29 +197,6 @@ body {
 	margin-top: 10vh;
 }
 
-.flutuante, .flutuante2, .flutuante3{
-	left: -10rem;
-	position: absolute;
-	width: 30rem;
-	height: 30rem;
-}
-
-.flutuante{
-	top: 1500px;
-}
-
-.flutuante2{
-	left: -14rem;
-	top: 2400px;
-	transform: rotate(25deg);
-}
-
-.flutuante3{
-	top: 2400px;
-	left: 83%;
-	transform: rotate(-25deg);
-}
-
 .flutuante-img {
 	width: 100%;
 	height: 100%;
@@ -306,8 +283,6 @@ body {
 	font-weight: bold;
 }
 
-
-
 .wave-img {
 	display: block;
 }
@@ -343,13 +318,53 @@ body {
 	color: var(--font-clr);
 	font-weight: bold;
 }
+
+/* WHATSAPP */
+
+#whatsapp{
+	width: 100%;
+	background-color: #F2D5C4;
+	margin-top: 5vh;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+#whatsapp h3{
+	width: 80%;
+	text-align: center;
+	font-size: clamp(1.5rem, 2.2vw, 2.8rem);
+	font-weight: 900;
+	color: #800000;
+}
+
+.whatsapp-container{
+	margin-top: 1rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.whatsapp-link i {
+
+	font-size: 3.5rem;
+	color: #800000;
+	transition: transform .5s ease-in-out;
+}
+
+.whatsapp-link i:hover {
+	transform: scale(1.5);
+}
+
 /* SERVIÇOS */
 
 #servicos {
 	margin-top: 5vh;
 	padding-top: 3rem;
-	background:url('../img/bola-background.jpg') center center no-repeat;
-	background-size: cover;
+	background: #ffc2ca;
 }
 
 #servicos h3{
@@ -453,7 +468,30 @@ body {
 	width: 100%;
 }
 
+.flutuante1, .flutuante2 ,.flutuante3, .flutuante4{
+	width: 30%;
+	position: absolute;
+}
 
+.flutuante2{
+	right: -12%;
+	transform: rotate(-25deg) !important;
+}
+
+.flutuante1{
+	left: -15%;
+	transform: rotate(25deg) !important;
+}
+
+.flutuante3{
+	left: -11%;
+	transform: rotate(25deg) !important;
+}
+
+.flutuante4{
+	right: -14%;
+	transform: rotate(-25deg) !important;
+}
 
 /* FIM LOCATION */
 
@@ -489,11 +527,13 @@ footer {
 	height: 70%;
 }
 
-#contato {
+#localizacao {
 	margin-top: 5vh;
 	padding-bottom: 5vh;
 	max-width: 100%;
 	background-color: #F2D5C4;
+	display: flex;
+	align-items: center;
 }
 
 .tel-us-container {
@@ -749,9 +789,5 @@ footer {
 
 	.location-img-container {
 		margin-top: 2rem;
-	}
-
-	.flutuante, .flutuante2, .flutuante3{
-		display: none;
 	}
 }
