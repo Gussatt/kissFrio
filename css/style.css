@@ -9,13 +9,19 @@
 	text-decoration: none !important;
 }
 
+html, body {
+	overflow-x: hidden;
+	position: relative;
+}
+   
+
 :root {
 	--font-clr: #f6f6f6;
 }
 
 body {
 	box-sizing: border-box;
-	overflow-x: hidden;
+	overflow-x: hidden !important;
 	font-family: 'Montserrat', 'Verdana', sans-serif;
 	background-color: #F2EAD0;
 }
